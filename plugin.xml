@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="fr.adfab.Volumedetectionphonegap" version="1.1.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="fr.adfab.ViewMeterCordova" version="1.1.1">
 	
     <engines>
         <engine name="cordova" version="3.*" />
     </engines>
     
-    <name>VolumeDetectionPhonegap</name>
-    <description>VolumeDetectionPhonegap</description>
+    <name>ViewMeterCordova</name>
+    <description>ViewMeterCordova</description>
     <license>MIT</license>
     <keywords>Sound,meter</keywords>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-		    <feature name="VolumeDetectionPhonegap">
-		        <param name="ios-package" value="VolumeDetectionPhonegap" />
-		        <param name="stop" value="VolumeDetectionPhonegap" />
-		        <param name="start" value="VolumeDetectionPhonegap" />
+		    <feature name="ViewMeterCordova">
+		        <param name="ios-package" value="ViewMeterCordova" />
+		        <param name="stop" value="ViewMeterCordova" />
+		        <param name="start" value="ViewMeterCordova" />
 		    </feature>
         </config-file>
 
-        <header-file src="src/ios/VolumeDetectionPhonegap.h" />
-        <source-file src="src/ios/VolumeDetectionPhonegap.m" />
+        <header-file src="src/ios/ViewMeterCordova.h" />
+        <source-file src="src/ios/ViewMeterCordova.m" />
         
-        <js-module src="www/ios.js" name="VolumeDetectionPhonegap">
-            <clobbers target="window.VolumeDetectionPhonegap" />
+        <js-module src="www/ios.js" name="ViewMeterCordova">
+            <clobbers target="window.ViewMeterCordova" />
         </js-module>
     </platform>
 </plugin>

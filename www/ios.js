@@ -1,13 +1,13 @@
-var VolumeDetectionPhonegap = {
+var ViewMeterCordova = {
 	
-	start: function(str, callback)
+	init: function(callback)
 	{
 		cordova.exec(
 			callback,
 			function(err)
 			{
 				callback(err);
-			}, "VolumeDetectionPhonegap", "init", ['']
+			}, "ViewMeterCordova", "init", ['']
 		);
 	},
 	
@@ -18,21 +18,21 @@ var VolumeDetectionPhonegap = {
 			function(err)
 			{
 				callback(err);
-			}, "VolumeDetectionPhonegap", "stop", ['']
+			}, "ViewMeterCordova", "stop", ['']
 		);
 	},
 	
-	restart: function(callback)
+	start: function(callback)
 	{
 		cordova.exec(
 			callback,
 			function(err)
 			{
 				callback(err);
-			}, "VolumeDetectionPhonegap", "start", ['']
+			}, "ViewMeterCordova", "start", ['']
 		);
 	}
 	
 };
 
-module.exports = VolumeDetectionPhonegap;
+module.exports = ViewMeterCordova;
